@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <link rel= "stylesheet" type= "text/css" href= "style.css">
+</head>
+<body class= "img">
+
+  <div class="row justify-content-center">
+    <div class="jumbotron jumbotron-fluid col-lg-9 col-md-6 justify-content-center">
+      <div class="container row justify-content-center">
+        <h1 class="display-3 border border-danger justify-content-center">Train Schedule</h1>
+        <span class="border border-primary justify-content-center">  <h2>Fill out the form to find out when the next train arrives!</h2>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div class="container justify-content-center">
+    <table class="table table-bordered col-md-6"">
+      <thead class="thead-default">
+        <tr>
+          <th>Train Name</th>
+          <th>Destination</th>
+          <th>Frequency</th>
+          <th>Next Arrival</th>
+          <th>Minutes Away</th>
+        </tr>
+      </thead>
+      <tbody class="tableBody">
+
+      </tbody>
+    </table>
+  </div>
+
+  <div class="container">
+
+  	<div class="container col-lg-12 col-md-12 col-sm-12 trainInput">
+      <span class = "border border-success">
+        <div class="form-group nameInput">
+          <label for="usr">Train Name:</label>
+          <input type="text" class="form-control TrainName" id="usr">
+        </div>
+        <div class="form-group">      
+         <label for="usr">Destination:</label>
+         <input type="text" class="form-control Destination" id="pwd">
+       </div>
+       <div class="form-group">
+         <label for="usr">First Train Time (Military Time):</label>
+         <input type="text" class="form-control FirstTrainTime" id="pwd">
+       </div>
+       <div class="form-group">
+
+         <label for="usr">Frequency (minutes):</label>
+         <input type="text" class="form-control tFrequency" id="pwd">
+       </div>
+       <span class="input-group-btn">
+        <button class="btn btn-success submitButton go" type="button">Go!</button>
+      </span>
+
+    </div>
+  </span>
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+<!-- Link to Moment.js should go here -->
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+
+<script src = "logic.js"></script>
+
+</body>
+</html>

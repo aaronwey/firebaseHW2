@@ -1,0 +1,38 @@
+
+h2{
+  font-size: 30px !important;
+}
+
+
+
+body {
+ 
+  background-image: url("http://nedward.org/junkie/subwaymap.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.jumbotron {
+  background-color: white;
+  border: 4px solid #cecece;
+
+}
+
+.table {
+  background: white;
+  border:4px solid #cecece;
+}
+
+.trainInput {
+  background: white;
+  border:4px solid #cecece;
+}
+
+.nameInput {
+   margin-top: 8px
+}
+
+.go {
+   margin-bottom: 16px
+}
